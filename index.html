@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap" rel="stylesheet">
 </head>
 
-<body class="bg-image">
+<body id="abdul" class="bg-image">
 	
 
 <!-- partial:index.partial.html -->
@@ -97,6 +97,24 @@ Lyrics by Abdul Muttaqin
 </div>
 </div>
 <!-- partial -->
+<script>(function () {
+        var viewFullScreen = document.getElementById("gg");
+        if (viewFullScreen) {
+            viewFullScreen.addEventListener("click", function () {
+                var docElm = document.documentElement;
+                if (docElm.requestFullscreen) {
+                    docElm.requestFullscreen();
+                }
+                else if (docElm.mozRequestFullScreen) {
+                    docElm.mozRequestFullScreen();
+                }
+                else if (docElm.webkitRequestFullScreen) {
+                    docElm.webkitRequestFullScreen();
+                }
+            }, false);
+        }
+        })();</script>
+                            
   <script  src="./script.js"></script>
 <script src="./lirik.js" type="text/javascript"></script>
 <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script><script  src="./rain.js"></script>
